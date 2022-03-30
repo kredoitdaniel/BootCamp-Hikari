@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway&display=swap');
+
+/* 
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+*/
+
+
+/* Selectors */
+
+/* 1. Universal by using "*" = call all elements in html */
+
+* {
+    background-color: aqua;
+}
+
+
+/* Element */
+/* examples: h1 h2 h3 h4 h5 h6, p, img, etc */
+
+h2 {
+    background-color: yellow;
+}
+
+p {
+    background-color: green;
+}
+
+
+/* class using = .+value*/
+
+.par1 {
+    background-color: brown;
+}
+
+.paragraph {
+    background-color: blue;
+}
+
+
+/* id = unique name */
+
+#par-id {
+    background-color: darkseagreen;
+}
+
+
+/* and selecttor by using(,) */
+
+h5,
+h6 {
+    background-color: sandybrown;
+}
+
+
+/* descendant by using (space) */
+/* parents and children connection */
+
+ol li {
+    background-color: teal;
+}
+
+
+
+/* hierarchy / ranking
+
+    1st = id
+    2nd = class
+    3rd = element
+
+
+*/
+
+a {
+    background-color: hotpink;
+}
+
+.facebook {
+    background-color: khaki;
+}
+
+#fb {
+    background-color: teal;
+}
+
+
+/* CSS Typography Colors 
+
+    1. rgb
+    2. rgba
+    3. hexcode
+    4. opacity
+*/
+
+h1 {
+    color: rgb(7, 184, 67);
+}
+
+h2 {
+    color: rgba(7, 184, 67, .5);
+    opacity: .5;
+}
+
+h3 {
+    color: #F473B9;
+}
+
+
+
+/* font-family 
+    default in windows
+    1. serif = has a tail
+    2. sans-serif = no tail
+    3. monospace = have the same fixed width
+*/
+
+h1 {
+    font-family: serif;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+h3 {
+    font-family: sans-serif;
+}
+
+h4 {
+    font-family: monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;  
+}
+
+
+/* Element font-Size without parent
+
+    16px = default font size of html
+    100% = 16px default font size of html
+    1em = 100% = 16px default font size of html
+
+*/
+
+h6 {
+    font-size: 100px;
+}
+
+h1 {
+    font-size: 100%;
+}
+
+h4 {
+    font-size: 3em;
+}
+
+
+
+/* font-weight */
+
+p {
+    font-weight: bold;
+}
+
+a {
+    font-weight: 100;
+}
+
+
+/* font-style */
+
+h6 {
+    font-style: italic;
+}
+
+
+
+/* text-transform */
+
+a {
+    text-transform: capitalize;
+}
+
+
+/* text-decoration */
+
+.facebook {
+    text-decoration: line-through;
+}
+
+#fb {
+    text-decoration: none;
+}
+
+
+/* text-align */
+
+p {
+    text-align: right;
+} 
+
+
+/* text-shadow */
+
+h6 {
+    background-color: rgba(7, 184, 67, 1);
+    text-shadow: 3px 3px 10px blue;
+    opacity: 1;
+}
+
+
+/* text-indent */
+
+.indent1 {
+    text-indent: 50px;
+}
+
+.indent2 {
+    text-indent: 5%;
+    height: 300px;
+    width: 300px;
+    overflow: auto;
+}
+
+.indent3 {
+    text-indent: 5em;
+}
+
+
+/* letter spacing */
+
+.indent1 {
+    letter-spacing: 20px;
+}
+
+
+/* word spacing */
+
+.indent2 {
+    word-spacing: 30px;
+}
+
+
+/* CSS List */
+
+ol {
+    list-style: disc;
+}
+
+ul {
+    list-style: lower-alpha;
+}
+
+/* list-style position */
+
+ol {
+    background-color: darkgoldenrod;
+    list-style-position: outside;
+}
+
+ol ul li {
+    background-color: green;
+}
+
+
+/* CSS Images */
+
+.img3 {
+    height: 500px;
+    width: 500px;
+}
+
+
+/* background-image */
+
+.indent3 {
+    background-image: url(../images/garden.jpg);
+    height: 300px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* CSS Tables */
+
+table {
+    empty-cells: show;
+}
+
+table {
+    border-collapse: separate;
+}
+
+/* border-spacing */
+
+table {
+    border-spacing: 50px 10px;
+}
+
+
+/* box-model
+
+    content
+    padding
+    margin
+
+*/
+/* border-style */
+
+.box1 {
+    border: 3px solid red;
+    height: 200px;
+    width: 200px;
+    padding: 100px;
+    box-sizing: border-box;   /*maintain size of the box*/
+    background-color: darkred;
+    box-shadow: 4px -4px 6px darkgoldenrod;
+}
+
+.box2 {
+    border: 3px solid darkgreen;
+    height: 200px;
+    width: 200px;
+    border-width: 10px;
+    border-color: blue;
+    border-style: dotted;
+    border-style: dashed;
+    border-style: double;
+    border-style: groove;
+    border-style: ridge;
+    border-style: inset;
+    border-style: outset;
+    border-left: 10px dashed;
+    border-right: 10px double;
+    /* border-radius: 100px; */
+
+
+}
+
+.box1-text {
+    border: 3px dashed darkgoldenrod;
+    text-align: left !important;
+    padding: 20px;
+    margin: 20px 30px;
+}   
+
+.box2-text {
+    border: 3px dashed darkgoldenrod;
+    text-align: left !important;
+    margin: 10px 20px 30px 40px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+
+
+/* Centering content */
+
+h6 {
+    text-align: center;
+}
+
+
+.box1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+}

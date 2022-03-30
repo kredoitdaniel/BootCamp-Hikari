@@ -1,0 +1,104 @@
+/* Presets / Custom = want to have a default setting */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+}
+
+
+.header {
+    border: 5px solid red;
+    overflow: auto;
+}
+
+.header h1 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    float: left;
+}
+
+ul li {
+    display: inline;
+    margin-right: 3em;
+}
+
+ul {
+    float: right;
+    margin: 1em auto;
+}
+
+
+/* section */
+
+.section {
+    border: 5px solid darkblue;
+    overflow: auto;
+}
+
+.section-text {
+    border: 3px dashed darkgreen;
+    float: left;
+    width: 50%;
+    height: 500px;
+    text-align: center;
+}
+
+
+/* CSS Position */
+
+.static {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    left: 100px;  /*not supported*/
+    z-index: 2; /*not support in static*/
+}
+
+.relative {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    z-index: 3;
+}
+
+.relative2 {
+    background-color: teal;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 50px;
+    bottom: 50px;
+    z-index: 2;
+}
+
+.abs-parent {
+    background-color: aqua;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    z-index: 2;
+}
+
+.absolute {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+
+.fixed {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    left: 200px;
+    top: 0;
+    z-index: 3;
+}
+
